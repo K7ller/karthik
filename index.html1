@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Academic Management System - Student Login</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #151f58, #202866);
+    color: #333;
+  }
+  .container {
+    width: 850px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  }
+  .left, .right {
+    flex: 1;
+  }
+  .left {
+    padding-right: 40px;
+    border-right: 1px solid #eee;
+  }
+  .right {
+    padding-left: 40px;
+    text-align: center;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .title {
+    font-weight: bold;
+    color: #8B0019; /* dark red */
+    font-size: 26px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .subtitle {
+    font-style: italic;
+    font-size: 22px;
+    color: #216621; /* dark green */
+    margin-bottom: 30px;
+  }
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 14px;
+    outline: none;
+  }
+  input[type="text"]:focus, input[type="password"]:focus {
+    border-bottom-color: #8B0019;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    background: #5A367A;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #7d4e9c;
+  }
+  .small-text {
+    font-size: 12px;
+    color: red;
+    margin-top: -12px;
+    margin-bottom: 0;
+  }
+  .right img.stack {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  .right img.academic {
+    width: 140px;
+  }
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="logo">
+      <img src="https://www.veltech.edu.in/wp-content/uploads/2023/06/Vel-Tech-Logo-1.png" alt="Vel Tech University Logo" />
+      <p style="font-size: 13px; margin-top: -10px; font-weight: 600;">
+        Rangarajan Dr. Sagunthala<br />
+        R&D Institute of Science and Technology<br />
+        (Deemed to be University Estd. u/s 3 of UGC Act, 1956)
+      </p>
+      <p style="font-weight: 600; font-size: 12px; margin-top: -5px;">STUDENT LOGIN</p>
+    </div>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" />
+      <button type="submit">LET'S GO</button>
+      <p class="small-text">Use capital letters e.g., VTU45678/VTA1234, Others use same format</p>
+    </form>
+  </div>
+
+  <div class="right">
+    <h2 class="title">ACADEMIC MANAGEMENT SYSTEM</h2>
+    <h3 class="subtitle">STUDENT LOGIN</h3>
+    <img src="https://i.imgur.com/OvMd7gN.png" alt="Books Stack" class="stack" />
+    <br />
+    <img src="https://cdn.brandfetch.io/veltech.edu.in/1b8bde63-5a32-44c6-8b5f-858869b54a70.png" alt="Academic" class="academic" />
+  </div>
+</div>
+
+<footer>
+  Copyright VEL TECH 2023 - Designed and Developed by Software Team - Office of CoE
+</footer>
+
+</body>
+</html>
